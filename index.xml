@@ -6,8 +6,20 @@
     <description>Recent content on Xliiauo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 19 Nov 2016 15:06:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Nov 2016 12:02:39 +0000</lastBuildDate>
     <atom:link href="https://xliiauo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Avoid padding top in Outlook</title>
+      <link>https://xliiauo.github.io/post/avoid-padding-top-in-outlook/</link>
+      <pubDate>Wed, 30 Nov 2016 12:02:39 +0000</pubDate>
+      
+      <guid>https://xliiauo.github.io/post/avoid-padding-top-in-outlook/</guid>
+      <description>&lt;p&gt;As I have been organising the team&amp;rsquo;s Brown Bag events since last year, we send out an html email every week to let the team know what&amp;rsquo;s happening. The html email have never been easy to keep a consistent style across all platforms.&lt;/p&gt;
+
+&lt;p&gt;The macOS Outlook and the built in Mail has always been very friendly towards html emails. Problems&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hello world</title>
