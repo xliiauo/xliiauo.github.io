@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xliiauo</title>
-    <link>https://xliiauo.github.io/index.xml</link>
+    <link>https://xliiauo.github.io/tags/foundation/index.xml</link>
     <description>Recent content on Xliiauo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 30 Nov 2016 12:02:39 +0000</lastBuildDate>
-    <atom:link href="https://xliiauo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xliiauo.github.io/tags/foundation/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Avoid padding top in Outlook</title>
@@ -48,26 +47,6 @@ $primary-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Good luck!&lt;/p&gt;
-
-&lt;p&gt;Xiao&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello world</title>
-      <link>https://xliiauo.github.io/post/hello-world/</link>
-      <pubDate>Sat, 19 Nov 2016 15:06:38 +0000</pubDate>
-      
-      <guid>https://xliiauo.github.io/post/hello-world/</guid>
-      <description>&lt;p&gt;After having tried out several static site engines and hosting solutions. I&amp;rsquo;ve finally started writing my first blog. Yeah!&lt;/p&gt;
-
-&lt;p&gt;What to write about? I guess everything about my life maybe food or travel? I would probably write a little about technologies although I am really not a guru. I enjoy exploring new technologies and I can spend my whole weekend in my uni library, play with some cool stuff, say, Elasticsearch stack.&lt;/p&gt;
-
-&lt;p&gt;Having been in the UK for 2 years and really enjoying living and working here. I found the food is really not too bad. Three of my favourites: sausage rolls, Yorkshire puddings and victoria sponge cakes.&lt;/p&gt;
-
-&lt;p&gt;Alright, guess that is so much for today.&lt;/p&gt;
-
-&lt;p&gt;Until next time,&lt;/p&gt;
 
 &lt;p&gt;Xiao&lt;/p&gt;
 </description>

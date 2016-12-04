@@ -15,9 +15,41 @@
       <pubDate>Wed, 30 Nov 2016 12:02:39 +0000</pubDate>
       
       <guid>https://xliiauo.github.io/post/avoid-padding-top-in-outlook/</guid>
-      <description>&lt;p&gt;As I have been organising the team&amp;rsquo;s Brown Bag events since last year, we send out an html email every week to let the team know what&amp;rsquo;s happening. The html email have never been easy to keep a consistent style across all platforms.&lt;/p&gt;
+      <description>&lt;p&gt;As I have been organising the team&amp;rsquo;s Brown Bag events since last year, we send out an html email every week to let the team know what&amp;rsquo;s happening. The html email has never been easy to keep a consistent style across all platforms.&lt;/p&gt;
 
-&lt;p&gt;The macOS Outlook and the built in Mail has always been very friendly towards html emails. Problems&lt;/p&gt;
+&lt;p&gt;The macOS Outlook and the built in Mail has always been very friendly towards html emails. When it comes to the Outlook on Windows and Outlook.com, it is a totally different story. I often find myself spending hours fixing rendering errors on one or the other platform. As my wider team is windows based with some people processing their emails on Outlook.com. I can give up neither of them.&lt;/p&gt;
+
+&lt;p&gt;This week, I finnaly updated our email processing stack to &lt;strong&gt;&lt;em&gt;Foundation for email 2&lt;/em&gt;&lt;/strong&gt; Sass version. Which makes my life a little bit easier with its built-in inliner. And the new template makes it easier to use more natural fonts.&lt;/p&gt;
+
+&lt;p&gt;But this time, I was stuck with the Outlook 2010 on Windows. The top header&amp;rsquo;s padding was totally missing. This in the end turned out to be an Outlook bug. The &lt;code&gt;padding-top&lt;/code&gt; will not render properly in certain versions of Outlook and replacing with &lt;code&gt;margin-top&lt;/code&gt; fixed my error. There are also some other things to watch out for. I was trying to create a fansy gradient header bar which worked great on Mac but looked terrible on Outlook for Windows and Outlook.com. The colour was missing and replaced with white. I wasn&amp;rsquo;t expecting the gradient to be rendered correctly but I did put the defualt background colour and seems Outlook just ignored it. After googled a while and I found the &lt;code&gt;bgcolor&lt;/code&gt; attribute came to rescue.&lt;/p&gt;
+
+&lt;p&gt;Related code snips attached:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// In your template sass
+.header {
+  background: $primary-color;
+  background: $primary-gradient;
+  background: $primary-gradient-o;
+  background: $primary-gradient-moz;
+  background: $primary-gradient-webkit;
+  filter: $primary-filter;
+}
+
+// In the sass where you define your colours
+$primary-color: #55379b;
+$primary-gradient: linear-gradient(135deg, #55379b, #bdabc4);
+$primary-gradient-o: -o-linear-gradient(135deg, #bdabc4, #55379b);
+$primary-gradient-moz: -moz-linear-gradient(135deg, #bdabc4, #55379b);
+$primary-gradient-webkit: -webkit-linear-gradient(135deg, #bdabc4, #55379b);
+$primary-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#55379b&#39;, endColorstr=&#39;#bdabc4&#39;, GradientType=1);
+
+// In your html, add the bgcolor
+&amp;lt;wrapper class=&amp;quot;header&amp;quot; bgcolor=&amp;quot;#55379b&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Good luck!&lt;/p&gt;
+
+&lt;p&gt;Xiao&lt;/p&gt;
 </description>
     </item>
     
